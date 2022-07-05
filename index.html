@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="img/delta2.jpg">
+    <title>INV△SION</title>
+</head>
+<body id="oue">
+<header> 
+    <p class="header" style="color: white; font-size: larger;">INV△SION</p>
+    <button class="buttons" onclick="save()">Save</button>
+    <button class="buttons" onclick="load()">Load</button>
+    <button class="buttons" onclick="reset()">Reset game</button><br><br>
+    <a href="#game"><div class="scrolldown"></div>
+    </a>
+</header>
+
+
+<div class="game" id="game"> 
+<div class="leftSection">
+    <label class="txt">🪐 Satisfied Planets per second :<section id="gps">0</section></label>
+    
+    <h1 class="txt">Click The Space Ship To Conquer Planets</h1>
+    <div class="clickball" onClick="click_anime()" id="click">
+    <img class="img1" src="img/5.gif" height="150px" width="150px" class="btn"  id="btn" value="Click" draggable="false" onclick="addGold(1)"><br><br>
+    </div>
+    <label class="txt">🪐 Satisfied Planets :<section id="gold">0</section><br></label>
+</div>
+<div class="shop">
+    <P class="shoptxt">SP△CE SHOP 🛒</P> 
+    <button class="btn1" onclick="buyMinion(1)">Space ship 🚀  [<span id="minioncost_1">15</span>] <span id="minionowned_1"></span><span id="miniongps_1"></span></button> <!--+1-->
+
+    <button class="btn2" onclick="buyMinion(2)">U.F.O 🛸 [<span id="minioncost_2">130</span>] -- <span id="minionowned_2"></span><span id="miniongps_2"></span></button><!--+6-->
+
+    <button class="btn3" onclick="buyMinion(3)">Dark Side Of The Moon 🌘 [<span id="minioncost_3">2600</span>] -- <span id="minionowned_3"></span><span id="miniongps_3"></span></button><!--+36-->
+
+    <button class="btn4" onclick="buyMinion(4)">Robots Replacing Humans 🤖 [<span id="minioncost_4">52 000</span>] -- <span id="minionowned_4"></span><span id="miniongps_4"></span></button><!--+216-->
+
+    <button class="btn5" onclick="buyMinion(5)">Discovering New Species 👽 [<span id="minioncost_5">624 000</span>] -- <span id="minionowned_5"></span><span id="miniongps_5"></span></button><!--+1 296-->
+
+    <button class="btn6" onclick="buyMinion(6)">Parallel Universe 🚪[<span id="minioncost_6">7 488 000</span>] -- <span id="minionowned_6"></span><span id="miniongps_6"></span></button><!--+7 776-->   
+</div>
+</div>
+<br><br>
+
+
+<footer>Copyrights 2021 Invasion Corp, All rights reserved.</footer>
+<script src="index.js"></script> 
+</body>
+</html>
